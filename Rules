@@ -35,7 +35,7 @@ end
 
 compile '*' do
   if not item.binary?
-    filter :erb
+    filter :haml
     layout 'default'
   end
 end
