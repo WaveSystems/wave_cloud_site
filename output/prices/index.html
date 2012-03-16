@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><%= @item[:title]%></title>
+    <title></title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -27,13 +27,18 @@
   </head>
 
   <body>
-    <!--<img class = "bg" src = "images/city_sm.png"></img>-->
 
     <div class="topbar">
       <div class="fill">
         <div class="container">
-          <a class="brand" href="#"><%= @item[:site_name]%></a>
-					<%= render '/partials/default/nav'%>
+          <a class="brand" href="#"></a>
+					<ul class="nav">
+  <li class="active"><a href="/">Home</a></li>
+  <li><a href="/prices.html">Prices</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
         </div>
       </div>
 
@@ -41,10 +46,16 @@
 
     <div class="container">
 
-      <%= yield%>
+      <h2>Prices</h2>
+
 
       <footer align = "center">
-        <%= render '/partials/default/nav2'%>
+        <ul class="nav">
+  <li><a href="/">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
         <p>&copy; WaveSystems 2012</p>
       </footer>
 
